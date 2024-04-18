@@ -26,8 +26,14 @@ client.on("messageCreate", msg => {
     if (msg.content === "ping") {
         msg.reply("Pong!");
     }
+    if (msg.content === "ying") {
+        msg.reply("Ya callate!");
+    }
     if (msg.content === "pancho") {
         msg.reply("mamahuevo 🥵")
+    }
+    if (msg.content === "lolaso") {
+        msg.reply("No es Lolaso, es Trollaso 🥵")
     }
     if (msg.content === `${BOT_PREFIX}${MUTE_COMMAND}`) {
         muteUser(msg.member)
